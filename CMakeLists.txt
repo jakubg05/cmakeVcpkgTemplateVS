@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.22)
 
-set(CMAKE_TOOLCHAIN_FILE "../external/vcpkg/scripts/buildsystems/vcpkg.cmake" CACHE STRING "") # path works when in the build directory
+set(CMAKE_TOOLCHAIN_FILE "${CMAKE_SOURCE_DIR}/external/vcpkg/scripts/buildsystems/vcpkg.cmake" CACHE STRING "") # path works when in the build directory
 
 project(cmaketemplate VERSION 1.0.0 LANGUAGES C CXX)
 
