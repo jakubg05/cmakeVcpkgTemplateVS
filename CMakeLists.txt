@@ -11,6 +11,6 @@ find_package(glfw3 CONFIG REQUIRED)
 find_package(glm CONFIG REQUIRED)
 
 # adding other CMakeLiss.txt files in oher directories
-add_subdirectory(lib/my_lib)
-add_subdirectory(app)
+add_subdirectory(Core/lib/my_lib)
+add_subdirectory(App)
 
