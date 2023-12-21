@@ -1,12 +1,12 @@
 #include <iostream>
-#include <my_lib.hpp>
+//#include <my_lib.hpp>
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 #include <glm/glm.hpp>
 #include <glm/gtx/string_cast.hpp>
 
 int main() {
-    hello();
+    //hello();
     if (!glfwInit()) {
         std::cerr << "Failed to initialize GLFW" << std::endl;
         return -1;

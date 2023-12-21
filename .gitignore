@@ -50,6 +50,7 @@ cmake_install.cmake
 
 # CMake build directory
 build/
+out/
 
 # If you're using vcpkg (uncomment the line below)
 vcpkg_installed/
