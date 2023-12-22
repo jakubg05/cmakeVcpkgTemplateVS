@@ -1,19 +1,24 @@
 #include <iostream>
-//#include <my_lib.hpp>
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 #include <glm/glm.hpp>
 #include <glm/gtx/string_cast.hpp>
+#include "example_lib.hpp"
 
 int main() {
-    //hello();
+
+    // running the example function from example_lib
+    example_function();
+
+    // testing glm
+    glm::vec3 example_vector = glm::vec3(1.0f, 2.0f, 3.0f);
+    std::cout << glm::to_string(example_vector) << std::endl;
+
+    // testing glfw and glew by creating an OpenGL window
     if (!glfwInit()) {
         std::cerr << "Failed to initialize GLFW" << std::endl;
         return -1;
     }
-
-    glm::vec3 my_vec = glm::vec3(0.0f, 0.0f, 0.0f);
-    std::cout << glm::to_string(my_vec) <<std::endl;
 
     // Create a windowed mode window and its OpenGL context
     GLFWwindow* window = glfwCreateWindow(640, 480, "Hello GLFW", NULL, NULL);

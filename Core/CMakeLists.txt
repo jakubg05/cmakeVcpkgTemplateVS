@@ -1,1 +1,1 @@
-add_subdirectory(lib/my_lib)
+add_subdirectory(example_library)
